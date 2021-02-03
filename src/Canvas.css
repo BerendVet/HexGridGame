@@ -1,0 +1,20 @@
+body {
+  background: grey;
+  overflow: hidden;
+}
+
+.canvasContainer {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+canvas {
+  left: 0;
+  top: 0;
+  /* border: 1px solid black; */
+  position: absolute;
+}

@@ -1,0 +1,19 @@
+{
+    "factions" : [
+        {
+            "id": 0,
+            "name": "No faction",
+            "hue": 0,
+            "saturation":0
+        },
+        {
+            "id":0,
+            "name": "Romans",
+            "hue": 0
+        }, {
+            "id":1,
+            "name": "Germanics",
+            "hue": 240
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+.sidenav {
+  background-color: beige;
+  border: 1px solid black;
+  height: 100%;
+  width: 200px;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+}
