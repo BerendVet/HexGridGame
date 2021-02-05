@@ -26,10 +26,17 @@ export class Tile {
 
     addPop() {
         // take random pop from selected tile
-        let pop = this.population[Math.ceil(Math.random() * this.population.length - 1)]
+        // let pop = this.population[Math.ceil(Math.random() * this.population.length - 1)]
+
+        
+        let pop = {
+            color: this.control.color,
+            allegiance: this.control,
+            loyalty: 100
+        }
         if (pop != null) {
             // duplicate pop
-            this.population.push({ ...pop })
+            this.population.push(pop)
         }
     }
 

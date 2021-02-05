@@ -94,6 +94,7 @@ export default class Modal extends React.Component {
         >
           <Header>{header}</Header>
           {paragraph ? <Paragraph>{paragraph}</Paragraph> : null}
+
           <ButtonsWrapper>
             {
               cancelAction

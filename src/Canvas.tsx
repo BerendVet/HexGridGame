@@ -156,8 +156,10 @@ export default class Canvas extends React.Component<CanvasProps> {
             } else if (this.getNeighbors((this.state as any).selectedHex).some((n) => n.x === hex.x && n.y === hex.y)) {
                 let selectedHex = (this.state as any).selectedHex
                 let from = this.props.board.grid[selectedHex.x][selectedHex.y]
-                let to = this.props.board.grid[hex.x][hex.y]
-                this.props.moveUnits(from, to)
+                if(from.units.length > 0) {
+                    let to = this.props.board.grid[hex.x][hex.y]
+                    this.props.moveUnits(from, to)
+                }
 
                 // deselect clicked tile
                 this.setState({
